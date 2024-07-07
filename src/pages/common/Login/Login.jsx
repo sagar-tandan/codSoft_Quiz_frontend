@@ -28,7 +28,7 @@ function LoginPage() {
   };
   return (
     <div className="flex justify-center items-center h-screen w-screen bg-primary">
-      <div className="card w-400 p-3 bg-white">
+      <div className="card w-400 p-8 bg-white">
         <div className="flex flex-col">
           <h1 className="text-2xl">
             Quiz-App Login <i className="ri-login-circle-line"></i>
@@ -48,7 +48,7 @@ function LoginPage() {
             <div className="flex flex-col gap-2">
               <button
                 type="submit"
-                className="primary-contained-btn mt-2 w-100"
+                className="primary-contained-btn mt-2 w-200"
               >
                 Login
               </button>

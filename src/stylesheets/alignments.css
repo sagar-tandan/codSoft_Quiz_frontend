@@ -37,6 +37,9 @@
 .w-100 {
   width: 100%;
 }
+.w-200 {
+  width: 450px;
+}
 
 .w-400 {
   width: 400px;
@@ -116,6 +119,13 @@
 
 .p-5 {
   padding: 50px;
+}
+
+.p-8 {
+  padding-right: 80px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .mt-1 {

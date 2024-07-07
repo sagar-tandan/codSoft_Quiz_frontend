@@ -15,6 +15,8 @@ import PublicRoute from "./components/PublicRoute";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import UserHomePage from "./pages/common/Home/UserHome";
 
+import Loader from "./components/Loader.jsx";
+
 import { useSelector } from "react-redux";
 import { isTokenExp } from "./Utils/jwt";
 
@@ -28,6 +30,8 @@ function App() {
 
   return (
     <>
+      {loading && <Loader />}
+
       <Router>
         <Routes>
           <Route

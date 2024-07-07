@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getAllQuizs } from "../../../apicalls/quizs";
-// import PageTitle from "../../../components/PageTitle";
+import PageTitle from "../../../components/PageTitle";
 import { HideLoading, ShowLoading } from "../../../redux/loaderSlice";
 
 function UserHomePage() {
@@ -12,7 +12,7 @@ function UserHomePage() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const user = useSelector((state) => state.users.user);
-  
+
   const getQuizs = async () => {
     try {
       dispatch(ShowLoading());
@@ -50,9 +50,7 @@ function UserHomePage() {
                       Total Questions: {exam.questions.length}
                     </h1>
                     <h1 className="text-md">Total Marks: {exam.total}</h1>
-                    <h1 className="text-md">
-                      Passing Marks: {exam.req}
-                    </h1>
+                    <h1 className="text-md">Passing Marks: {exam.req}</h1>
                     <h1 className="text-md">Duration: {exam.duration}</h1>
                     <button
                       className="primary-outlined-btn cursor-pointer"
