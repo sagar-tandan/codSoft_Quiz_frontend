@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/common/Login/Login";
 import RegisterPage from "./pages/common/Register/Register.jsx";
 import PublicRoute from "./components/PublicRoute";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import UserHomePage from "./pages/common/Home/UserHome";
 
 import { useSelector } from "react-redux";
@@ -48,9 +49,9 @@ function App() {
           <Route
             path="/"
             element={
-              // <ProtectedRoute>
-              <UserHomePage />
-              // </ProtectedRoute>
+              <ProtectedRoute>
+                <UserHomePage />
+              </ProtectedRoute>
             }
           />
         </Routes>
