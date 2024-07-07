@@ -127,6 +127,15 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.p-y{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
 
 .mt-1 {
   margin-top: 10px !important;

@@ -25,8 +25,8 @@ function RegisterPage() {
     }
   };
   return (
-    <div className="flex justify-center items-center h-screen w-screen bg-primary">
-      <div className="card w-400 p-3 bg-white">
+    <div className="flex justify-center items-center h-screen w-screen bg-primary overflow-x-hidden p-y">
+      <div className="card w-400 p-8 bg-white">
         <div className="flex flex-col">
           <h1 className="text-2xl">
             Quiz-App Register <i className="ri-user-add-line"></i>
@@ -94,7 +94,7 @@ function RegisterPage() {
             <div className="flex flex-col gap-2">
               <button
                 type="submit"
-                className="primary-contained-btn mt-2 w-100"
+                className="primary-contained-btn mt-2 w-200"
               >
                 Register
               </button>
