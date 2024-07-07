@@ -9,6 +9,11 @@ import "./stylesheets/form-element.css";
 import "./stylesheets/layout.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LoginPage from "./pages/common/Login/Login";
+import RegisterPage from "./pages/common/Register/Register.jsx";
+import PublicRoute from "./components/PublicRoute";
+import UserHomePage from "./pages/common/Home/UserHome";
+
 import { useSelector } from "react-redux";
 import { isTokenExp } from "./Utils/jwt";
 
@@ -20,7 +25,38 @@ function App() {
     localStorage.removeItem("token");
   }
 
-  return <></>;
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route
+            path="/login"
+            element={
+              <PublicRoute>
+                <LoginPage />
+              </PublicRoute>
+            }
+          />
+          <Route
+            path="/register"
+            element={
+              <PublicRoute>
+                <RegisterPage />
+              </PublicRoute>
+            }
+          />
+          <Route
+            path="/"
+            element={
+              // <ProtectedRoute>
+              <UserHomePage />
+              // </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </Router>
+    </>
+  );
 }
 
 export default App;
