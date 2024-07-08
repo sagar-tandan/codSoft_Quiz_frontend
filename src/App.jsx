@@ -18,6 +18,7 @@ import AdminHomePage from "./pages/common/Home/AdminHome";
 import ResultsPage from "./pages/user/Results/Common_Results";
 import ProfilePage from "./pages/user/Profile/Profile";
 import WriteQuiz from "./pages/user/WriteQuiz/Write_Quizs";
+import QuizsPage from "./pages/admin/Quizs/Quizs";
 
 import Loader from "./components/Loader.jsx";
 
@@ -90,13 +91,15 @@ function App() {
           />
 
           <Route
-            path="/user/write-quiz/:id"
+            path="/admin/quizs"
             element={
               <ProtectedRoute>
-                <WriteQuiz />
+                <QuizsPage />
               </ProtectedRoute>
             }
           />
+
+          
         </Routes>
       </Router>
     </>
