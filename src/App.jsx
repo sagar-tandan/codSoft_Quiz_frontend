@@ -99,6 +99,14 @@ function App() {
             }
           />
 
+          <Route
+            path="/user/write-quiz/:id"
+            element={
+              <ProtectedRoute>
+                <WriteQuiz />
+              </ProtectedRoute>
+            }
+          />
           
         </Routes>
       </Router>
