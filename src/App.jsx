@@ -20,6 +20,8 @@ import ProfilePage from "./pages/user/Profile/Profile";
 import WriteQuiz from "./pages/user/WriteQuiz/Write_Quizs";
 import QuizsPage from "./pages/admin/Quizs/Quizs";
 import AddEditQuiz from "./pages/admin/Quizs/AddEditQuiz";
+import AdminResultsPage from "./pages/admin/Results/Admin_Results";
+// import { isTokenExp } from "./Utils/jwt";
 
 import Loader from "./components/Loader.jsx";
 
@@ -122,6 +124,15 @@ function App() {
             element={
               <ProtectedRoute>
                 <AddEditQuiz />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/admin/results"
+            element={
+              <ProtectedRoute>
+                <AdminResultsPage />
               </ProtectedRoute>
             }
           />
