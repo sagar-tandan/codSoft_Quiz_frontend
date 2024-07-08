@@ -5,7 +5,7 @@ import { HideLoading, ShowLoading } from "../../../redux/loaderSlice";
 import { useDispatch } from "react-redux";
 import { getAllTryByUser } from "../../../apicalls/results";
 
-function ReportsPage() {
+function ResultsPage() {
   const [resultsData, setResultsData] = useState([]);
   const dispatch = useDispatch();
   const columns = [

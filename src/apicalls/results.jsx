@@ -1,5 +1,5 @@
 import axiosInstance from ".";
-const apiUrl = process.env.REACT_APP_BASE_URL;
+const apiUrl = import.meta.VITE_APP_BASE_URL;
 
 export const addResult = async (payload) => {
   try {
