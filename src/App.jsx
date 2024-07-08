@@ -21,7 +21,6 @@ import WriteQuiz from "./pages/user/WriteQuiz/Write_Quizs";
 import QuizsPage from "./pages/admin/Quizs/Quizs";
 import AddEditQuiz from "./pages/admin/Quizs/AddEditQuiz";
 
-
 import Loader from "./components/Loader.jsx";
 
 import { useSelector } from "react-redux";
@@ -110,6 +109,22 @@ function App() {
             }
           />
 
+          <Route
+            path="/admin/quizs/add"
+            element={
+              <ProtectedRoute>
+                <AddEditQuiz />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/quizs/edit/:id"
+            element={
+              <ProtectedRoute>
+                <AddEditQuiz />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </Router>
     </>
