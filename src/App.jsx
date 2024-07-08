@@ -14,6 +14,7 @@ import RegisterPage from "./pages/common/Register/Register.jsx";
 import PublicRoute from "./components/PublicRoute";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import UserHomePage from "./pages/common/Home/UserHome";
+import AdminHomePage from "./pages/common/Home/AdminHome";
 
 import Loader from "./components/Loader.jsx";
 
@@ -58,6 +59,7 @@ function App() {
               </ProtectedRoute>
             }
           />
+          
         </Routes>
       </Router>
     </>
