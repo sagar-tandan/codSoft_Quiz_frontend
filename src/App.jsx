@@ -19,6 +19,8 @@ import ResultsPage from "./pages/user/Results/Common_Results";
 import ProfilePage from "./pages/user/Profile/Profile";
 import WriteQuiz from "./pages/user/WriteQuiz/Write_Quizs";
 import QuizsPage from "./pages/admin/Quizs/Quizs";
+import AddEditQuiz from "./pages/admin/Quizs/AddEditQuiz";
+
 
 import Loader from "./components/Loader.jsx";
 
@@ -107,7 +109,7 @@ function App() {
               </ProtectedRoute>
             }
           />
-          
+
         </Routes>
       </Router>
     </>
