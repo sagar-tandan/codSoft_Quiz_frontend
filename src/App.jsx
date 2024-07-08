@@ -17,6 +17,7 @@ import UserHomePage from "./pages/common/Home/UserHome";
 import AdminHomePage from "./pages/common/Home/AdminHome";
 import ResultsPage from "./pages/user/Results/Common_Results";
 import ProfilePage from "./pages/user/Profile/Profile";
+import WriteQuiz from "./pages/user/WriteQuiz/Write_Quizs";
 
 import Loader from "./components/Loader.jsx";
 
@@ -84,6 +85,15 @@ function App() {
             element={
               <ProtectedRoute>
                 <ProfilePage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/user/write-quiz/:id"
+            element={
+              <ProtectedRoute>
+                <WriteQuiz />
               </ProtectedRoute>
             }
           />
