@@ -15,6 +15,8 @@ import PublicRoute from "./components/PublicRoute";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import UserHomePage from "./pages/common/Home/UserHome";
 import AdminHomePage from "./pages/common/Home/AdminHome";
+import ResultsPage from "./pages/user/Results/Common_Results";
+import ProfilePage from "./pages/user/Profile/Profile";
 
 import Loader from "./components/Loader.jsx";
 
@@ -64,6 +66,24 @@ function App() {
             element={
               <ProtectedRoute>
                 <AdminHomePage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/user/results"
+            element={
+              <ProtectedRoute>
+                <ResultsPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <ProfilePage />
               </ProtectedRoute>
             }
           />
