@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import "./App.css";
 import "./stylesheets/alignments.css";
 import "./stylesheets/textelements.css";
