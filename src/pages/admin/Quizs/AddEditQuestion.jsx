@@ -72,6 +72,7 @@ function AddEditQuestion(props) {
       }}
     >
       <Form
+      className="p-6"
         onFinish={onFinish}
         layout="vertical"
         initialValues={{

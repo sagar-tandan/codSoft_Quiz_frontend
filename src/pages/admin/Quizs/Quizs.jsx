@@ -5,6 +5,7 @@ import { Table, message } from "antd";
 import { useDispatch } from "react-redux";
 import { HideLoading, ShowLoading } from "../../../redux/loaderSlice";
 import { getAllQuizs, deleteQuiz } from "../../../apicalls/quizs";
+import "remixicon/fonts/remixicon.css";
 
 function QuizsPage() {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ function QuizsPage() {
         return (
           <div className="flex gap-2">
             <i
-              className="ri-pencil-line cursor-pointer"
+              className="ri-pencil-line cursor-pointer "
               onClick={() => navigate(`/admin/quizs/edit/${record._id}`)}
             ></i>
             <i
