@@ -31,7 +31,7 @@ function AddEditQuestion(props) {
           quiz: quizId,
           questionId: selectedQuestion?._id,
         };
-        response = await editQuestionInExam(requiredPayload1, examId);
+        response = await editQuestionInQuiz(requiredPayload1, quizId);
       } else {
         const requiredPayload2 = {
           name: values.name,
@@ -44,7 +44,7 @@ function AddEditQuestion(props) {
           },
           quiz: quizId,
         };
-        response = await addQuestionToExam(requiredPayload2, quizId);
+        response = await addQuestionToQuiz(requiredPayload2, quizId);
       }
       dispatch(HideLoading());
       if (response.success) {

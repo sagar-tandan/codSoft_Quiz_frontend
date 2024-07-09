@@ -61,6 +61,7 @@ function AddEditQuiz() {
     if (id) {
       getQuizDataById(id);
     }
+    console.log("Quiz ID:", id); 
   }, []);
   const deleteQuestionById = async (questionId) => {
     try {
@@ -219,7 +220,7 @@ function AddEditQuiz() {
         <AddEditQuestion
           setShowAddEditQuestionModal={setShowAddEditQuestionModal}
           showAddEditQuestionModal={showAddEditQuestionModal}
-          examId={id}
+          quizId={id}
           refreshData={getQuizDataById}
           selectedQuestion={selectedQuestion}
           setSelectedQuestion={setSelectedQuestion}
