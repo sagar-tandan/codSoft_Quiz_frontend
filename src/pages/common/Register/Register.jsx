@@ -29,7 +29,7 @@ function RegisterPage() {
       <div className="card w-400 p-8 bg-white">
         <div className="flex flex-col">
           <h1 className="text-2xl">
-            Quiz-App Register <i className="ri-user-add-line"></i>
+            QuizMania Register <i className="ri-user-add-line"></i>
           </h1>
           <div className="divider"></div>
           <Form layout="vertical" className="mt-2" onFinish={onFinish}>
