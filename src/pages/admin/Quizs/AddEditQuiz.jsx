@@ -136,7 +136,7 @@ function AddEditQuiz() {
     <div>
       <PageTitle title={id ? "Edit Quiz" : "Add Quiz"} />
       <div className="divider"></div>
-      {(examData || !id) && (
+      {(quizData || !id) && (
         <Form
           layout="vertical"
           onFinish={onFinish}
@@ -144,15 +144,15 @@ function AddEditQuiz() {
           className="mt-2"
         >
           <Tabs defaultActiveKey="1">
-            <Tabs.TabPane tab="Exam Details" key="1">
+            <Tabs.TabPane tab="Quiz Details" key="1">
               <Row gutter={[10, 10]}>
                 <Col span={8}>
-                  <Form.Item label="Exam Name" name="name">
+                  <Form.Item label="Quiz Name" name="name">
                     <input type="text" />
                   </Form.Item>
                 </Col>
                 <Col span={8}>
-                  <Form.Item label="Exam Duration" name="duration">
+                  <Form.Item label="Quiz Duration" name="duration">
                     <input type="number" min={0} />
                   </Form.Item>
                 </Col>
