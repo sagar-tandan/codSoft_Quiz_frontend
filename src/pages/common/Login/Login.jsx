@@ -31,7 +31,7 @@ function LoginPage() {
       <div className="card w-400 p-8 bg-white">
         <div className="flex flex-col">
           <h1 className="text-2xl">
-            Quiz-App Login <i className="ri-login-circle-line"></i>
+            QuizMania Login <i className="ri-login-circle-line"></i>
           </h1>
           <div className="divider"></div>
           <Form layout="vertical" className="mt-2" onFinish={onFinish}>
