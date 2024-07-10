@@ -74,7 +74,7 @@ function AdminResultsPage() {
   }, []);
   return (
     <div>
-      <PageTitle title="Reports" />
+      <PageTitle title="Results" />
       <div className="divider"></div>
       <div className="flex gap-2 mt-2">
         <input
