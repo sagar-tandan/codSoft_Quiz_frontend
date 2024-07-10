@@ -35,7 +35,8 @@ select {
 .primary-outlined-btn:hover {
   background-color: var(--primary);
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .ant-form-item {

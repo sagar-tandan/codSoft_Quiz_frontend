@@ -213,14 +213,14 @@ function WriteQuiz() {
           </div>
         )}
         {view === "result" && result && (
-          <div className="flex justify-center mt-2 gap-2">
-            <div className="flex flex-col gap-2 result">
+          <div className="flex justify-center mt-2 gap-2 ">
+            <div className="flex flex-col gap-2 bg p-8 rounded">
               <h1 className="text-2xl">Result</h1>
               <div className="marks">
-                <h1 className="text-md">Total Marks : {quizData.total}</h1>
-                <h1 className="text-md">Required Marks : {quizData.req}</h1>
+                <h1 className="text-md">Total Score : {quizData.total}</h1>
+                {/* <h1 className="text-md">Required Marks : {quizData.req}</h1> */}
                 <h1 className="text-md">
-                  Obtained Marks : {result.correctAnswers.length}
+                  Obtained Score : {result.correctAnswers.length}
                 </h1>
                 <h1 className="text-md">
                   Wrong Answers : {result.wrongAnswers.length}
@@ -228,7 +228,7 @@ function WriteQuiz() {
                 <h1 className="text-md">Verdict : {result.verdict}</h1>
                 <div className="flex gap-2 mt-2">
                   <button
-                    className="primary-outlined-btn"
+                    // className="primary-outlined-btn"
                     onClick={() => {
                       setView("instructions");
                       setSelectedQuestionIndex(0);
@@ -240,7 +240,7 @@ function WriteQuiz() {
                     Retake Quiz
                   </button>
                   <button
-                    className="primary-contained-btn"
+                    // className="primary-contained-btn"
                     onClick={() => {
                       setView("review");
                     }}
