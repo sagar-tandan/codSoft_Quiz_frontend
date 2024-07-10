@@ -71,7 +71,7 @@ function WriteQuiz() {
       }
 
       dispatch(ShowLoading());
-      const response = await addReport({
+      const response = await addResult({
         quiz: id,
         result: tempResult,
         user: user._id,
