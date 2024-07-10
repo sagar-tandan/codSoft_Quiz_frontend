@@ -43,17 +43,17 @@ function AdminHomePage() {
             quizs.map((exam, index) => {
               return (
                 <Col span={6} key={index}>
-                  <div className="card-lg flex flex-col gap-1 p-2">
+                  <div className="card-lg flex flex-col gap-1 p-2 rounded bg">
                     <h1 className="text-2xl">{exam.name}</h1>
                     <div className="divider"></div>
                     <h1 className="text-md">Category: {exam.category}</h1>
                     <h1 className="text-md">
                       Total Questions: {exam.questions.length}
                     </h1>
-                    <h1 className="text-md">Total Marks: {exam.totalMarks}</h1>
-                    <h1 className="text-md">
+                    <h1 className="text-md">Total Marks: {exam.total}</h1>
+                    {/* <h1 className="text-md">
                       Passing Marks: {exam.passingMarks}
-                    </h1>
+                    </h1> */}
                     <h1 className="text-md">Duration: {exam.duration}</h1>
                     {/* <button
                       className="primary-outlined-btn cursor-pointer"

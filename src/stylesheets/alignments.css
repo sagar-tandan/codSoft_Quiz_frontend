@@ -135,7 +135,7 @@
   padding-right: 80px;
   padding-left: 50px;
 }
-.p-y-1{
+.p-y-1 {
   padding-top: 0px;
 }
 .p-y {
@@ -154,9 +154,13 @@
 .mt-2 {
   margin-top: 20px !important;
 }
-.pb-1{
+.pb-1 {
   padding-bottom: 20px;
 }
-.rounded{
+.rounded {
   border-radius: 10px;
+}
+.bg {
+  background-color: #306579;
+  color: white;
 }

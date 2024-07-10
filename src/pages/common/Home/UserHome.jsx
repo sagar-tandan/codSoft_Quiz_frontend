@@ -42,7 +42,7 @@ function UserHomePage() {
             quizs.map((exam, index) => {
               return (
                 <Col span={6} key={index}>
-                  <div className="card-lg flex flex-col gap-1 p-2">
+                  <div className="card-lg flex flex-col gap-1 p-2 rounded bg">
                     <h1 className="text-2xl">{exam.name}</h1>
                     <div className="divider"></div>
                     <h1 className="text-md">Category: {exam.category}</h1>
