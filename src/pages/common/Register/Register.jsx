@@ -25,12 +25,10 @@ function RegisterPage() {
     }
   };
   return (
-    <div className="flex justify-center items-center h-screen w-screen bg-primary overflow-x-hidden p-y">
-      <div className="card w-400 p-8 bg-white">
+    <div className="flex justify-center items-center h-screen w-screen bg-primary overflow-x-hidden p-y-1">
+      <div className="card w-400 p-x bg-white">
         <div className="flex flex-col">
-          <h1 className="text-2xl">
-            QuizMania Register <i className="ri-user-add-line"></i>
-          </h1>
+          <h1 className="text-2xl">QuizMania</h1>
           <div className="divider"></div>
           <Form layout="vertical" className="mt-2" onFinish={onFinish}>
             <Form.Item
@@ -38,7 +36,7 @@ function RegisterPage() {
               label="UserType"
               style={{ display: "flex", alignItems: "center" }}
             >
-              <div style={{ display: "flex", gap: "20px" }}>
+              <div style={{ display: "flex", gap: "10px" }}>
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <input
                     type="radio"
@@ -91,7 +89,7 @@ function RegisterPage() {
                 required
               />
             </Form.Item>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 pb-1">
               <button
                 type="submit"
                 className="primary-contained-btn mt-2 w-200"

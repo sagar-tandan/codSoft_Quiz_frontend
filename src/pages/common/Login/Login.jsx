@@ -30,9 +30,7 @@ function LoginPage() {
     <div className="flex justify-center items-center h-screen w-screen bg-primary">
       <div className="card w-400 p-8 bg-white">
         <div className="flex flex-col">
-          <h1 className="text-2xl">
-            QuizMania Login <i className="ri-login-circle-line"></i>
-          </h1>
+          <h1 className="text-2xl">QuizMania</h1>
           <div className="divider"></div>
           <Form layout="vertical" className="mt-2" onFinish={onFinish}>
             <Form.Item name="email" label="Email">

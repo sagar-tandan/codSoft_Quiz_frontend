@@ -123,8 +123,7 @@
 
 .p-6 {
   padding-right: 50px;
- 
-} 
+}
 
 .p-8 {
   padding-right: 80px;
@@ -132,15 +131,21 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.p-y{
+.p-x {
+  padding-right: 80px;
+  padding-left: 50px;
+}
+.p-y-1{
+  padding-top: 0px;
+}
+.p-y {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.overflow-x-hidden{
+.overflow-x-hidden {
   overflow-x: hidden;
 }
-
 
 .mt-1 {
   margin-top: 10px !important;
@@ -148,4 +153,7 @@
 
 .mt-2 {
   margin-top: 20px !important;
+}
+.pb-1{
+  padding-bottom: 20px;
 }
