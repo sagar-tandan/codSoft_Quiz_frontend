@@ -48,7 +48,7 @@ function ResultsPage() {
       if (response.success) {
         setResultsData(response.data);
         message.success(response.message);
-        console.log(reportsData);
+        console.log(resultsData);
       } else {
         message.error(response.message);
       }
