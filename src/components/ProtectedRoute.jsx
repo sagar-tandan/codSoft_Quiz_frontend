@@ -168,7 +168,7 @@ function ProtectedRoute({ children }) {
                 )}
               </div>
               <h1 className="text-2xl text-white flex items-center">
-                Quiz App
+                QuizMania
               </h1>
               <div>
                 <div className="flex justify-center items-center gap-1">

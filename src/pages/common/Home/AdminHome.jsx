@@ -36,7 +36,7 @@ function AdminHomePage() {
   return (
     user.isAdmin && (
       <div>
-        <PageTitle title={`Hi ${user.name}, Welcome to Quiz App`} />
+        <PageTitle title={`Hi ${user.name}, Welcome to QuizMania`} />
         <div className="divider"></div>
         <Row gutter={[16, 16]} className="mt-2">
           {quizs &&
