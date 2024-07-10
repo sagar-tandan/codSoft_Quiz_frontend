@@ -28,7 +28,7 @@ function LoginPage() {
   };
   return (
     <div className="flex justify-center items-center h-screen w-screen bg-primary">
-      <div className="card w-400 p-8 bg-white">
+      <div className="card w-400 p-8 bg-white rounded">
         <div className="flex flex-col">
           <h1 className="text-2xl">QuizMania</h1>
           <div className="divider"></div>

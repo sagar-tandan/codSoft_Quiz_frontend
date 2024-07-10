@@ -127,7 +127,7 @@
 
 .p-8 {
   padding-right: 80px;
-  padding-left: 50px;
+  padding-left: 35px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -156,4 +156,7 @@
 }
 .pb-1{
   padding-bottom: 20px;
+}
+.rounded{
+  border-radius: 10px;
 }
