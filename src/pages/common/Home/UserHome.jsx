@@ -49,12 +49,12 @@ function UserHomePage() {
                     <h1 className="text-md">
                       Total Questions: {exam.questions.length}
                     </h1>
-                    <h1 className="text-md">Total Marks: {exam.total}</h1>
-                    <h1 className="text-md">Passing Marks: {exam.req}</h1>
+                    <h1 className="text-md">Total Score: {exam.total}</h1>
+                    {/* <h1 className="text-md">Passing Marks: {exam.req}</h1> */}
                     <h1 className="text-md">Duration: {exam.duration}</h1>
                     <button
                       className="primary-outlined-btn cursor-pointer"
-                      onClick={() => navigate(`/user/write-exam/${exam._id}`)}
+                      onClick={() => navigate(`/user/write-quiz/${exam._id}`)}
                     >
                       Start Quiz
                     </button>
