@@ -279,7 +279,7 @@ function WriteQuiz() {
                 question.correctOption === selectedOptions[index];
               return (
                 <div
-                  className={`flex flex-col gap-1 ${
+                  className={`flex flex-col gap-1 rounded mt-1 ${
                     isCorrect ? "bg-success" : "bg-error"
                   } p-2`}
                   key={index}
