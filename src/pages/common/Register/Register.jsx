@@ -26,7 +26,7 @@ function RegisterPage() {
   };
   return (
     <div className="flex justify-center items-center h-screen w-screen bg-primary overflow-x-hidden p-y-1">
-      <div className="card w-400 p-x bg-white">
+      <div className="card w-400 p-x bg-white rounded">
         <div className="flex flex-col">
           <h1 className="text-2xl">QuizMania</h1>
           <div className="divider"></div>
