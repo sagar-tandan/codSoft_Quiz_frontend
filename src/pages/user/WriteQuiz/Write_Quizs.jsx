@@ -228,7 +228,7 @@ function WriteQuiz() {
                 <h1 className="text-md">Verdict : {result.verdict}</h1>
                 <div className="flex gap-2 mt-2">
                   <button
-                    // className="primary-outlined-btn"
+                    className="primary-outlined-btn"
                     onClick={() => {
                       setView("instructions");
                       setSelectedQuestionIndex(0);
@@ -240,7 +240,7 @@ function WriteQuiz() {
                     Retake Quiz
                   </button>
                   <button
-                    // className="primary-contained-btn"
+                    className="primary-contained-btn"
                     onClick={() => {
                       setView("review");
                     }}

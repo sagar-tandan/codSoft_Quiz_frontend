@@ -9,7 +9,7 @@ select {
 .primary-contained-btn {
   background-color: var(--primary);
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
   cursor: pointer;
   border-radius: 5px;
 }
