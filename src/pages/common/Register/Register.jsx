@@ -83,11 +83,7 @@ function RegisterPage() {
               />
             </Form.Item>
             <Form.Item name="confirmPassword" label="Confirm Password">
-              <input
-                type="password"
-                placeholder="Enter your confirm password"
-                required
-              />
+              <input type="password" placeholder="Confirm password" required />
             </Form.Item>
             <div className="flex flex-col gap-2 pb-1">
               <button
