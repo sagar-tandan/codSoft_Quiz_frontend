@@ -7,6 +7,7 @@
   --danger: #f44336;
   --light: #f1f1f1;
   --dark: #212121;
+  --error: #f44336;
 }
 
 .bg-primary {
@@ -27,4 +28,8 @@
 
 .bg-warning {
   background-color: var(--warning);
+}
+
+.bg-error {
+  background-color: var(--error);
 }
