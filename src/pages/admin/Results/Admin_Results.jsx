@@ -81,7 +81,7 @@ function AdminResultsPage() {
           type="text"
           placeholder="Quiz"
           value={filters.quizName}
-          onChange={(e) => setFilters({ ...filters, examName: e.target.value })}
+          onChange={(e) => setFilters({ ...filters, quizName: e.target.value })}
         />
         <input
           type="text"
