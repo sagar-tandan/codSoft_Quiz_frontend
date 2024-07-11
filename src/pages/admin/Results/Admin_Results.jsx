@@ -3,7 +3,7 @@ import PageTitle from "../../../components/PageTitle";
 import { Table, message } from "antd";
 import { HideLoading, ShowLoading } from "../../../redux/loaderSlice";
 import { useDispatch } from "react-redux";
-import { getAllTry, getAllTryByUser } from "../../../apicalls/results";
+import { getAllTry } from "../../../apicalls/results";
 import moment from "moment";
 
 function AdminResultsPage() {
@@ -13,6 +13,7 @@ function AdminResultsPage() {
     userName: "",
   });
   const dispatch = useDispatch();
+
   const columns = [
     {
       title: "Quiz Name",
@@ -52,6 +53,7 @@ function AdminResultsPage() {
       render: (text, record) => <>{record.result.verdict}</>,
     },
   ];
+
   const getData = async (tempFilters) => {
     try {
       dispatch(ShowLoading());
@@ -60,7 +62,7 @@ function AdminResultsPage() {
       if (response.success) {
         setResultsData(response.data);
         message.success(response.message);
-        console.log(resultsData);
+        console.log("Fetched data:", response.data); // Additional console log
       } else {
         message.error(response.message);
       }
@@ -69,9 +71,11 @@ function AdminResultsPage() {
       message.error(error.message);
     }
   };
+
   useEffect(() => {
     getData(filters);
-  }, []);
+  }, [filters]); // Added filters to dependency array
+
   return (
     <div>
       <PageTitle title="Results" />
@@ -111,7 +115,12 @@ function AdminResultsPage() {
           Search
         </button>
       </div>
-      <Table columns={columns} className="mt-2" dataSource={resultsData} />
+      <Table
+        columns={columns}
+        className="mt-2"
+        dataSource={resultsData}
+        rowKey="_id"
+      />
     </div>
   );
 }
