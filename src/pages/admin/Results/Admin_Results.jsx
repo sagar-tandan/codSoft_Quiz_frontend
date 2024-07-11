@@ -37,11 +37,11 @@ function AdminResultsPage() {
       dataIndex: "total",
       render: (text, record) => <>{record.quiz.total}</>,
     },
-    {
-      title: "Required Marks",
-      dataIndex: "req",
-      render: (text, record) => <>{record.quiz.passingMarks}</>,
-    },
+    // {
+    //   title: "Required Marks",
+    //   dataIndex: "req",
+    //   render: (text, record) => <>{record.quiz.passingMarks}</>,
+    // },
     {
       title: "Obtained Marks",
       dataIndex: "obtainedMarks",
