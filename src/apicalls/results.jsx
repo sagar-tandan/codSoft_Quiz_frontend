@@ -2,7 +2,6 @@ import axiosInstance from ".";
 // const apiUrl = import.meta.VITE_APP_BASE_URL;
 const apiUrl = "http://localhost:5000";
 
-
 export const addResult = async (payload) => {
   try {
     const response = await axiosInstance.post(
