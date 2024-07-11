@@ -84,11 +84,11 @@ function ResultsPage() {
   const dispatch = useDispatch();
 
   const columns = [
-    // {
-    //   title: "Quiz Name",
-    //   dataIndex: "quizName",
-    //   render: (text, record) => <>{record.quiz.name}</>,
-    // },
+    {
+      title: "Quiz Name",
+      dataIndex: "quizName",
+      render: (text, record) => <>{record.quiz ? record.quiz.name : "N/A"}</>,
+    },
     {
       title: "Date",
       dataIndex: "date",
@@ -96,11 +96,11 @@ function ResultsPage() {
         <>{moment(record.createdAt).format("DD-MM-YYYY hh:mm:ss")}</>
       ),
     },
-    // {
-    //   title: "Total",
-    //   dataIndex: "total",
-    //   render: (text, record) => <>{record.quiz.total}</>,
-    // },
+    {
+      title: "Total",
+      dataIndex: "total",
+      render: (text, record) => <>{record.quiz ? record.quiz.total : "N/A"}</>,
+    },
     {
       title: "Obtained Marks",
       dataIndex: "obtainedMarks",
